@@ -3,10 +3,9 @@ import React from "react";
 import {View, Button, StyleSheet} from 'react-native'
 
 
-import WelcomeScreen from './app/screens/WelcomeScreen'
-
+import ViewImageScreen from "./app/screens/ViewImageScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
-  return <WelcomeScreen/>
+  return <MessagesScreen/>
 }
-

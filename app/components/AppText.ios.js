@@ -3,18 +3,17 @@ import { Text, StyleSheet } from 'react-native'
 
 //In this way you can create platform specific codes follow this naming convention for android and ios
 
-export default function AppText({children}) {
+export default function AppText({children, style}) {
     return (
 
-        <Text style={styles.textw}>{children}</Text>
+        <Text style={[styles.text, stye]}>{children}</Text>
 
     )
 }
 
 const styles = StyleSheet.create({
     text : {
-        color: 'tomato',
-        fontSize: 20,
+        fontSize: 18,
         fontFamily: 'Avenir'
     }
 })

@@ -1,13 +1,14 @@
 import React from 'react'
 import { StyleSheet, Image, View } from 'react-native'
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import colors from '../config/colors'
 
 export default function ViewImageScreen() {
     return (
         <View style={styles.container}>
-            <View style={styles.closeIcon}/>
-            <View style={styles.deleteIcon}/>
+            <MaterialCommunityIcons name="close" color={colors.primary} size={30} style={styles.closeIcon}/>
+            <MaterialCommunityIcons name="delete" color={colors.secondary} size={30} style={styles.deleteIcon}/>
             <Image  resizeMode='contain'  source={require('../assets/chair.jpg')} style={styles.image}/>
         </View>
     )
@@ -15,17 +16,11 @@ export default function ViewImageScreen() {
 
 const styles = StyleSheet.create({
     closeIcon: {
-        width: 35,
-        height: 35,
-        backgroundColor: colors.primary,
         position: 'absolute',
         top: 20,
         left: 30
     },
     deleteIcon: {
-        width: 35,
-        height: 35,
-        backgroundColor: colors.secondary,
         position: 'absolute',
         top: 20,
         right: 30
