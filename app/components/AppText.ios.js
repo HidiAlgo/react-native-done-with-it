@@ -5,10 +5,10 @@ import colors from '../config/colors'
 
 //In this way you can create platform specific codes follow this naming convention for android and ios
 
-export default function AppText({children, style}) {
+export default function AppText({children, style,...otherProps}) {
     return (
 
-        <Text style={[styles.text, stye]}>{children}</Text>
+    <Text style={[styles.text, stye]} {...otherProps}>{children}</Text>
 
     )
 }
